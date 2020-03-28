@@ -151,16 +151,16 @@ let message = (name) => ` Hello ${name}`
 console.log(message('Allie'));
 
 
-let Student = function(name, age, hometown) {
-  this.name = name;
-  this.age = age;
-  this.hometown = hometown;
-};
+// let Student = function(name, age, hometown) {
+//   this.name = name;
+//   this.age = age;
+//   this.hometown = hometown;
+// };
 
-let joe = new Student('Joe', 'Schmoe', 100);
-// var Student = function(name,homeTown,age) { this.name = name; this.homeTown = homeTown; this.age = age;}
+// let joe = new Student('Joe', 'Schmoe', 100);
+var Student = function (name,homeTown,age) { this.name = name; this.homeTown = homeTown; this.age = age;}
  
-// var joe = new Student('Joe', 'Schmoe', 100);
+var joe = new Student('Joe', 'Schmoe', 100);
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
 console.log(joe);
@@ -168,11 +168,11 @@ console.log(joe);
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
 
-Student.prototype.greeting = function() {
-  return `Hi, my name is ${this.name}`;
-};
+// Student.prototype.greeting = function() {
+//   return `Hi, my name is ${this.name}`;
+// };
 
-// Student.prototype.greeting = ()=>  `Hi, my name is ${Student.name}`
+Student.prototype.greeting = () =>  `Hi, my name is ${Student.name}`
 
 
 // TODO: Uncomment the following line of code to see the output in the browser console
@@ -183,9 +183,8 @@ console.log(joe.greeting());
 
 
 
-Student.courseName = function() {
-  return 'This student is enrolled in Code 301.';
-};
+Student.courseName = () => 'This student is enrolled in Code 301.';
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(Student.courseName());
@@ -194,9 +193,8 @@ console.log(Student.courseName());
 
 // STEP 11
 // How do arrow functions affect constructor functions?
-Student.prototype.scope = function() {
-  console.log(this);
-};
+Student.prototype.scope =() =>  console.log(this);
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(joe.scope());

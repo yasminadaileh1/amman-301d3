@@ -7,7 +7,7 @@ $(document).ready(function() {
   Dog.prototype.render = function() {
     let $dogClone = $("#dog-template").clone();
     $dogClone.find("h2").text(this.name);
-    $dogClone.find("img").attr("src", this.image_url);
+    $dogClone.find("img").attr("alt", this.image_url);
     $dogClone.find("p").text(this.hobbies);
     // $dogClone.removeClass("dog-template");
     $dogClone.removeAttr("id");

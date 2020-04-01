@@ -25,3 +25,25 @@ As a result of completing lecture 4 of Code 301, students will:
 - Be able to style a web application with CSS grids
 - Understand how to add and style icon fonts
 - Understand the basics of pattern matching with regular expressions
+
+## 1
+Number and name of feature: Feature #1: Refactor the CSS
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 12:00
+
+Finish time: 1 :00
+
+Actual time needed to complete: 1hr
+
+## 2
+Number and name of feature: Feature #2: Modify the contents
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 1:00
+
+Finish time: 2 :00
+
+Actual time needed to complete: 1hr
